@@ -47,14 +47,14 @@ function App() {
 
   const portfolio = [
     {
-      titulo: "Projeto de E-commerce com React",
-      descricao: "Desenvolvimento de uma loja virtual completa utilizando React, Redux para gerenciamento de estado e integração com API RESTful para catálogo de produtos e carrinho de compras.",
-      link: "https://github.com/seu-usuario/ecommerce-react" // Link para o repositório ou demo online
+      titulo: "Projeto lista de filme React",
+      descricao: "Desenvolvimento de um site com api simple para lista de filmes backend em lista simples e banco de dados em memoria",
+      link: "https://listadefilmes-adtf.onrender.com" // Link para o repositório ou demo online
     },
     {
-      titulo: "API RESTful com Node.js e Express",
-      descricao: "Criação de uma API robusta para gerenciamento de usuários e posts, utilizando Node.js, Express e MongoDB. Implementação de autenticação JWT e testes de unidade.",
-      link: "https://github.com/seu-usuario/api-nodejs-express" // Link para o repositório
+      titulo: "Site em React desafio 15",
+      descricao: "Criação de uma API robusta para gerenciamento de usuários e posts, utilizando Node.js, Express e Mysql DB. ",
+      link: "https://github.com/simbaravel23/projeto15" // Link para o repositório
     },
     // Adicione mais projetos aqui
   ];

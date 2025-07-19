@@ -6,7 +6,7 @@ const Footer = () => {
   const anoAtual = new Date().getFullYear();
   return (
     <footer className="footer">
-      <p>&copy; {anoAtual} Seu Nome. Todos os direitos reservados.</p>
+      <p>&copy; {anoAtual} Ravel Silva. Todos os direitos reservados.</p>
     </footer>
   );
 };
