@@ -1,0 +1,10 @@
+/* src/components/Footer.css */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  color: #777;
+  font-size: 0.9em;
+  width: 100%; /* Ocupa a largura total */
+}

@@ -1,0 +1,63 @@
+/* src/App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+
+  /* NOVO: Adicione estas propriedades para centralizar o conteúdo */
+  display: flex; /* Transforma o body em um container flexível */
+  justify-content: center; /* Centraliza os itens horizontalmente (no eixo principal) */
+  align-items: flex-start; /* Alinha os itens ao início do eixo transversal (topo), para não centralizar verticalmente */
+  min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da viewport */
+}
+
+.App {
+  max-width: 900px; /* Largura máxima para o conteúdo */
+  width: 100%; /* Garante que o .App ocupe 100% da largura disponível até o max-width */
+  margin: 20px 0; /* Margem superior e inferior de 20px, e horizontal de 0 (já centralizado pelo body) */
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  /* Estas propriedades foram movidas ou são redundantes se o body estiver centralizando */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+.container {
+  padding: 20px 0;
+  width: 100%; /* Garante que o container ocupe a largura total disponível */
+}
+
+.item {
+  margin-bottom: 20px;
+}
+
+.item h3 {
+  margin-bottom: 5px;
+  color: #0056b3;
+}
+
+.item p strong {
+  color: #555;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-list li {
+  background-color: #e2e2e2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
