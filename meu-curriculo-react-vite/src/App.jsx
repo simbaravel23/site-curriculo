@@ -5,7 +5,7 @@ import Section from './components/Section';
 import Footer from './components/Footer';
 
 function App() {
-  const foto = '/profile.png'; // Caminho da sua foto de perfil
+  const foto = '/self.jpg'; // Caminho da sua foto de perfil
 
   const nome = "Ravel Lucas de Freitas Silva";
   const cargo = "Desenvolvedor frontend/backend Júnior";
@@ -29,21 +29,35 @@ function App() {
 
   const educacao = [
     // Seus dados de educação superior (ex: faculdade)
-    // {
-    //   grau: "Bacharelado em Ciência da Computação",
-    //   instituicao: "Universidade Z",
-    //   periodo: "Fev 2016 - Dez 2019"
-    // }
+    {
+    grau: "Cursos",
+    instituicao: "Alura",
+    periodo: "Fev 2024 - Jul 2025"
+   }
   ];
 
   const habilidades = [
     // Suas habilidades
-    // "JavaScript", "React", "HTML", "CSS", "Node.js", "Git", "Sass", "RESTful APIs", "Metodologias Ágeis"
+     "JavaScript", "React", "HTML", "CSS", "Node.js", "Git", "Next.js", "RESTful APIs", "Mysql"
   ];
 
   // NOVA CONSTANTE PARA CURSOS/CERTIFICAÇÕES
   const certificacoesLink = "https://www.linkedin.com/in/ravel-silva-9b7a9695/details/certifications/";
   const certificacoesTexto = "Ver todas as minhas certificações no LinkedIn"; // Texto para o link
+
+  const portfolio = [
+    {
+      titulo: "Projeto de E-commerce com React",
+      descricao: "Desenvolvimento de uma loja virtual completa utilizando React, Redux para gerenciamento de estado e integração com API RESTful para catálogo de produtos e carrinho de compras.",
+      link: "https://github.com/seu-usuario/ecommerce-react" // Link para o repositório ou demo online
+    },
+    {
+      titulo: "API RESTful com Node.js e Express",
+      descricao: "Criação de uma API robusta para gerenciamento de usuários e posts, utilizando Node.js, Express e MongoDB. Implementação de autenticação JWT e testes de unidade.",
+      link: "https://github.com/seu-usuario/api-nodejs-express" // Link para o repositório
+    },
+    // Adicione mais projetos aqui
+  ];
 
   return (
     <div className="App">
@@ -68,6 +82,27 @@ function App() {
           )}
         </Section>
 
+        {/* NOVA SEÇÃO DE PORTFÓLIO */}
+        <Section title="Portfólio">
+          {portfolio.length > 0 ? (
+            portfolio.map((projeto, index) => (
+              <div key={index} className="item">
+                <h3>{projeto.titulo}</h3>
+                <p>{projeto.descricao}</p>
+                {projeto.link && (
+                  <p>
+                    <a href={projeto.link} target="_blank" rel="noopener noreferrer">
+                      Ver Projeto
+                    </a>
+                  </p>
+                )}
+              </div>
+            ))
+          ) : (
+            <p>Nenhum projeto de portfólio adicionado ainda. Comece a construir seu portfólio!</p>
+          )}
+        </Section>
+
         <Section title="Educação">
           {educacao.length > 0 ? (
             educacao.map((edu, index) => (
@@ -81,7 +116,6 @@ function App() {
           )}
         </Section>
 
-        {/* NOVA SEÇÃO PARA CURSOS/CERTIFICAÇÕES */}
         <Section title="Cursos e Certificações">
           <p>
             Você pode ver a lista completa das minhas certificações e cursos concluídos diretamente no meu perfil do LinkedIn: <br/>
