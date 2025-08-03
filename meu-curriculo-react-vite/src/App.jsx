@@ -47,6 +47,11 @@ function App() {
 
   const portfolio = [
     {
+      titulo: "Projeto loja de roupas em fremer",
+      descricao: "Desenvolvimento de um site com fremer de uma loja de roupas completa",
+      link: "hhttps://lojadaregiane.framer.website/" // Link para o repositório ou demo online
+    },
+    {
       titulo: "Projeto lista de filme React",
       descricao: "Desenvolvimento de um site com api simple para lista de filmes backend em lista simples e banco de dados em memoria",
       link: "https://listadefilmes-adtf.onrender.com" // Link para o repositório ou demo online
