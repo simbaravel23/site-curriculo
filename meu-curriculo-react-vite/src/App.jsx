@@ -13,7 +13,8 @@ function App() {
     email: "ravel.simba@gmail.com",
     telefone: "+55 (15) 99698-7980",
     linkedin: "https://www.linkedin.com/in/ravel-silva-9b7a9695/", // Seu perfil geral do LinkedIn
-    github: "https://github.com/seu-usuario"
+    github: "https://github.com/seu-usuario",
+    site: "https://site-curriculo-jocw.onrender.com/"
   };
 
   const sobreMim = `Sou um profissional apaixonado por desenvolvimento de sites no front-end, com experiência em [tecnologias/habilidades]. Busco sempre desafios que me permitam aprender e crescer. Iniciei minha carreira como Professor de Educação Física, porem em 2020 após uma cirurgia na coluna resolvi mudar de profissão devido a limitação física.`;
