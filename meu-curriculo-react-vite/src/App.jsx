@@ -20,10 +20,16 @@ function App() {
 
   const experiencia = [
     {
-      titulo: "Desenvolvedor Frontend Júnior",
-      empresa: "Empresa Aleli",
+      titulo: "Desenvolvedor beckend Júnior",
+      empresa: "Empresa Alell",
       periodo: "Mar 2024 - Dez 2024",
       descricao: "Criação de componentes reutilizáveis, integração com APIs RESTful e otimização de performance."
+    },
+     {
+      titulo: "Desenvolvedor Frontend Júnior",
+      empresa: "Empresa Alell",
+      periodo: "inicio jul 2025",
+      descricao: "Criação de componentes e paginas da empresa igotrip."
     }
   ];
 
@@ -32,13 +38,13 @@ function App() {
     {
     grau: "Cursos",
     instituicao: "Alura",
-    periodo: "Fev 2024 - Jul 2025"
+    periodo: "Fev 2024 - agosto 2025"
    }
   ];
 
   const habilidades = [
     // Suas habilidades
-     "JavaScript", "React", "HTML", "CSS", "Node.js", "Git", "Next.js", "RESTful APIs", "Mysql"
+     "JavaScript", "React", "HTML", "CSS", "Node.js", "Git", "Next.js", "RESTful APIs", "Mysql", "tailwindcss"
   ];
 
   // NOVA CONSTANTE PARA CURSOS/CERTIFICAÇÕES
